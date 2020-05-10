@@ -1,3 +1,10 @@
+// Function for date/time header
+$(document).ready(function () {
+  $("#date").text(moment().format("LL"));
+  $("#time").text(moment().format("LT"));
+});
+
+// Function for random movie generator
 $(document).ready(function () {
   $("#submitBtn").on("click", function (e) {
     e.preventDefault();
@@ -77,8 +84,6 @@ $(document).ready(function () {
       url: `https://www.omdbapi.com/?apikey=${apiKey}&t=${randomMovie}`,
       dataType: "json",
     }).then(function (res) {
-      console.log(res.Poster);
-
       $("#title").text(res.Title);
       $("#year").text(res.Year);
       $("#genre").text(res.Genre);
