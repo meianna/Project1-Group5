@@ -16,14 +16,13 @@
       crossorigin="anonymous"
     />
     <!-- Document title -->
-    <title>Recipe Finder</title>
+    <title>News</title>
   </head>
 
   <body>
     <!-- jumbotron -->
-    <header class="jumbotron bg-success text-light rounded-0">
-      <h1 class="text-center">Meal Finder</h1>
-      <h3 class="currentDate"></h3>
+    <header class="jumbotron bg-info text-light rounded-0">
+      <h1 class="text-center">News</h1>
     </header>
 
     <!-- nav bar -->
@@ -33,38 +32,28 @@
           <a class="nav-link" href="./index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="./recipes.html">Recipes</a>
+          <a class="nav-link" href="./recipes.html">Recipes</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./movies.html">Movies</a>
         </li>
-        <a class="nav-link" href="./news.html">News</a>
+        <li class="nav-item">
+          <a class="nav-link active" href="./news.html">News</a>
+        </li>
       </ul>
     </nav>
 
-    <!-- search container -->
-    <div class="container">
-      <div class="flex">
-        <form class="flex" id="submit">
-          <input
-            type="text"
-            id="search"
-            placeholder="Search for meals or keywords"
-          />
-          <button class="search-btn" type="submit">
-            <i class="fas fa-search"></i>
-          </button>
-        </form>
-        <button class="random-btn" id="random">
-          <i class="fas fa-random"></i>
-        </button>
-      </div>
-
-      <!-- results -->
-      <div id="result-heading"></div>
-      <div id="meals" class="meals"></div>
-      <div id="single-meal"></div>
-    </div>
+    <!-- search and results container -->
+    <section class="container text-center">
+      <button class="btn-primary btn-lg" id="submitBtn">
+        Movie Suggestion
+      </button>
+      <h2 id="title"></h2>
+      <h4 id="year"></h4>
+      <h5 id="genre"></h5>
+      <h6 id="runtime"></h6>
+      <div id="poster"></div>
+    </section>
 
     <!-- script files -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
@@ -73,6 +62,6 @@
       integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
       crossorigin="anonymous"
     ></script>
-    <script src="recipes.js"></script>
+    <script src="movies.js"></script>
   </body>
 </html>
