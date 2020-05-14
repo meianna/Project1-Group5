@@ -16,13 +16,13 @@ $(document).ready(function () {
       var source = res.articles[i].source.name;
       console.log(source);
 
-      var card = `<div class="col-sm-6"> 
-        <div class="card">
+      var card = `<div class="col-sm-4 col-sm-3 col-lg-2"> 
+        <div class="card" style="height:400px;">
           <img src="${image}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">${source}</h5>
             <p class="card-text">${title}</p>
-            <a target="_blank" href="${link}" class="btn btn-primary">Go somewhere</a>
+            <a target="_blank" href="${link}" class="btn btn-primary">${source}</a>
         </div>
       </div>
     </div>`;

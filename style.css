@@ -8,8 +8,8 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
 }
-/* .newsContainer{ */
-    column-count: 3;
+.card {
+margin-top: 20px;
 }
 .container {
     margin: auto;
