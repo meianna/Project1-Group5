@@ -36,20 +36,39 @@
     </ul>
   </nav>
 
-  <!-- weather  -->
+  <!-- weather and welcome  -->
   <div class="container" id="weatherContainer">
-    <div class="card text-center border-primary">
+    <div class="card border-primary">
       <div class="card-body">
-        <div class="card-text">
-          <h1 id="date"></h1>
-          <h1 id="time"></h1>
-          <p id="demo"></p>
-          <h4 id="cityName"></h4>
-          <h4 id="currentTemp"></h4>
-          <h6 id="currentHumidity"></h6>
-          <h6 id="weatherDescription"></h6>
-          <div>
-            <img id="weather-icon" style="width: 50px; height: 50px;" alt="weather-icon" />
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card-text text-center">
+              <h2 id="date"></h2>
+              <h2 id="time"></h2>
+              <p id="demo"></p>
+              <h4 id="cityName"></h4>
+              <h4 id="currentTemp"></h4>
+              <h6 id="currentHumidity"></h6>
+              <h6 id="weatherDescription"></h6>
+              <div>
+                <img id="weather-icon" style="width: 50px; height: 50px;" alt="weather-icon" />
+              </div>
+            </div>
+          </div>
+          <!-- welcome -->
+          <div class="col-md-6">
+            <div class="card-text">
+              <h2 class="text-center">Personal Dashboard</h2>
+              <p class="welcome">Hi there! This app was designed to help keep you informed, curious, and entertained in
+                these modern times.
+              </p>
+              <p class="welcome">Use this app to glance at the weather and stay up to date on the latest coronavirus
+                stats. Use the nav bar to explore more features!
+              </p>
+              <p class="welcome">Dive into the news section to check on what else is
+                going on in the world. Need a fun break? Find a new recipe to cook or watch a movie you've never seen!
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -60,16 +79,13 @@
   <div class="container" id="covidContainer">
     <div class="row">
       <div class="col-md-6">
-
         <div class="card mb-3 border-primary">
           <h5 class="card-header">COVID-19 Stats (Global)</h5>
           <div class="card-body">
             <div class="card-text" id="covidGlobal"></div>
           </div>
         </div>
-
       </div>
-
       <div class="col-md-6">
         <div class="card mb-3 border-primary">
           <h5 class="card-header">COVID-19 Stats (USA)</h5>
@@ -78,8 +94,6 @@
           </div>
         </div>
       </div>
-
-
     </div>
   </div>
 
