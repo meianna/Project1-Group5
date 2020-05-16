@@ -34,6 +34,9 @@ $(document).ready(function () {
     var lon = position.coords.longitude;
     var lat = position.coords.latitude;
 
+    console.log(lat);
+    console.log(lon);
+
     $.ajax({
       type: "GET",
       // url: `api.openweathermap.org/data/2.5/weather?q=San%20Francisco&appid=${api_key}`,
