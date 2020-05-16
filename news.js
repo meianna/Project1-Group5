@@ -8,24 +8,30 @@ $(document).ready(function () {
     dataType: "json",
   }).then(function (res) {
     console.log(res);
-    for (i = 3; i < 6; i++) {
+    var j = 0;
+    for (i = 0; i < 12; i++) {
       var title = res.articles[i].title;
       var link = res.articles[i].url;
       var image = res.articles[i].urlToImage;
       var source = res.articles[i].source.name;
       console.log(source);
-      var card = `
-        <div class="card" style="width: 18rem;">
+
+      var card = `<div class="col-sm-4 col-sm-3 col-lg-2"> 
+        <div class="card" style="height:400px;">
           <img src="${image}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">${source}</h5>
             <p class="card-text">${title}</p>
-            <a href="${link}" class="btn btn-primary">Go somewhere</a>
-          </div>
+            <a target="_blank" href="${link}" class="btn btn-primary">${source}</a>
         </div>
-      `;
-      $("#newsTitle").append(`<h3>${card}</h3>`);
+      </div>
+    </div>`;
+      $(".newsContainer").append(card);
       // $("#newsLink").append(`<h5>${link}</h5>`);
     }
   });
 });
+
+// if ((i % 4 = 0)) {
+// }
+//
