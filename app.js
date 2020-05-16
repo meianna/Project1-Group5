@@ -4,11 +4,6 @@ $(document).ready(function () {
 
   var localStorage = window.localStorage;
 
-  /* If localStorage("name") is occupied, display value
-    else prompt name 
-    and set input as value
-  */
-
   if (!localStorage.getItem("name-1")) {
     var name = prompt("What is your name");
     window.localStorage.setItem("name-1", `${name}`);
@@ -24,17 +19,18 @@ $(document).ready(function () {
   // weather API
   var api_key_kenny = "6dbe43cb883ce8ea55cc9545b5f2cea3";
   var x = document.getElementById("demo");
+  // showPosition();
 
-  // getLocation();
+  getLocation();
 
-  // var x = $("#demo");
-  // function getLocation() {
-  //   if (navigator.geolocation) {
-  //     navigator.geolocation.getCurrentPosition(showPosition);
-  //   } else {
-  //     x.html("Geolocation is not supported by this browser.");
-  //   }
-  // }
+  var x = $("#demo");
+  function getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+      x.html("Geolocation is not supported by this browser.");
+    }
+  }
 
   function showPosition(position) {
     var lon = position.coords.longitude;
