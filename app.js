@@ -1,5 +1,23 @@
 // Function for date/time header
 $(document).ready(function () {
+  var indexHeader = $("#indexHeader");
+
+  var localStorage = window.localStorage;
+
+  /* If localStorage("name") is occupied, display value
+    else prompt name 
+    and set input as value
+  */
+
+  if (!localStorage.getItem("name-1")) {
+    var name = prompt("What is your name");
+    window.localStorage.setItem("name-1", `${name}`);
+    indexHeader.html("Welcome " + localStorage.getItem("name-1") + "!");
+  } else {
+    indexHeader.html("Welcome " + localStorage.getItem("name-1") + "!");
+    // console.log(indexHeader.text);
+  }
+
   $("#date").text(moment().format("LL"));
   $("#time").text(moment().format("LT"));
 
@@ -45,6 +63,7 @@ $(document).ready(function () {
         var currentHumidity = res.main.humidity;
         var cityName = res.name;
         var currentTemp = parseInt(farenTemp);
+        var weatherDescription = res.weather[0].description;
 
         var iconUrl =
           "https://openweathermap.org/img/wn/" + weatherIcon + ".png";
@@ -53,6 +72,7 @@ $(document).ready(function () {
         $("#weather-icon").attr("src", `${iconUrl}`);
         $("#cityName").text(`${cityName}`);
         $("#currentTemp").text(`${currentTemp}º`);
+        $("#weatherDescription").text(`${weatherDescription}`);
       },
     });
   }
