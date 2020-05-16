@@ -27,6 +27,13 @@ body {
   ) !important;
 }
 
+.newsContainer {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
 .container {
   margin: auto;
   max-width: 800px;
