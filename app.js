@@ -25,16 +25,16 @@ $(document).ready(function () {
   var api_key_kenny = "6dbe43cb883ce8ea55cc9545b5f2cea3";
   var x = document.getElementById("demo");
 
-  getLocation();
+  // getLocation();
 
-  var x = $("#demo");
-  function getLocation() {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(showPosition);
-    } else {
-      x.html("Geolocation is not supported by this browser.");
-    }
-  }
+  // var x = $("#demo");
+  // function getLocation() {
+  //   if (navigator.geolocation) {
+  //     navigator.geolocation.getCurrentPosition(showPosition);
+  //   } else {
+  //     x.html("Geolocation is not supported by this browser.");
+  //   }
+  // }
 
   function showPosition(position) {
     var lon = position.coords.longitude;
