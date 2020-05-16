@@ -10,7 +10,28 @@ body {
 }
 
 .jumbotron {
-  background-image: linear-gradient(148deg, #21D4FD 0%, #1f7aaf 30%, #B721FF 100%) !important;
+  background-image: linear-gradient(
+    148deg,
+    #21d4fd 0%,
+    #1f7aaf 30%,
+    #b721ff 100%
+  ) !important;
+}
+
+#newsJumbotron {
+  background-color: #3eecac;
+  background-image: linear-gradient(
+    124deg,
+    #3eecac 0%,
+    #ee74e1 100%
+  ) !important;
+}
+
+.newsContainer {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 .container {
@@ -51,7 +72,6 @@ body {
 
 .flex {
   display: flex;
-
 }
 
 input,
@@ -64,7 +84,7 @@ button {
   margin: 0;
 }
 
-input[type='text'] {
+input[type="text"] {
   width: 300px;
 }
 
@@ -104,7 +124,6 @@ input[type='text'] {
   height: 100%;
   border: 4px #fff solid;
   border-radius: 2px;
-
 }
 
 .meal-info {
@@ -185,7 +204,7 @@ input[type='text'] {
 }
 
 @media (max-width: 500px) {
-  input[type='text'] {
+  input[type="text"] {
     width: 100%;
   }
 
@@ -203,7 +222,7 @@ input[type='text'] {
     margin: 0;
   }
 
-  input[type='text'] {
+  input[type="text"] {
     width: 300px;
   }
 
@@ -243,7 +262,6 @@ input[type='text'] {
     height: 100%;
     border: 4px #fff solid;
     border-radius: 2px;
-
   }
 
   .meal-info {
@@ -325,7 +343,7 @@ input[type='text'] {
 }
 
 @media (max-width: 500px) {
-  input[type='text'] {
+  input[type="text"] {
     width: 100%;
   }
 
