@@ -21,13 +21,13 @@ $(document).ready(function () {
       var image = res.articles[i].urlToImage;
       var desc = res.articles[i].description;
       var myDesc = desc.substring(0, 250);
-      var source = res.articles[i].source.name;
+      var source = res.articles[i].source.name.toLowerCase();
       var shorten = source.replace(".com", "");
       var upper = shorten.toUpperCase();
 
-      var card = `<div class="col-sm-4 col-md-4 col-lg-3" > 
+      var card = `<div class="col-sm-4 col-md-4 col-lg-3 col-xl-2" > 
       <div class="card text-white bg-dark mb-3" style="max-height:600px min-width:300;">
-      <div class="card-header bg gray ">${source}</div>
+      <div class="card-header">${source}</div>
             <img src="${image}" class="card-img-top" style="max-height:200px" alt="use imagination in lieu of image">
              <div class="card-body" >
             <h5 id = "demo" class="card-title">${upper}</h5>
