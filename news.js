@@ -25,14 +25,14 @@ $(document).ready(function () {
       var shorten = source.replace(".com", "");
       var upper = shorten.toUpperCase();
 
-      var card = `<div class="col-sm-4 col-md-4 col-lg-3 col-xl-2" > 
+      var card = `<div class="col-sm-4 col-md-4 col-lg-3 col-xl-3" > 
       <div class="card text-white bg-dark mb-3" style="max-height:600px min-width:300;">
-      <div class="card-header">${source}</div>
+      <div class="card-header" style = "font-weight:bolder;">${upper}</div>
             <img src="${image}" class="card-img-top" style="max-height:200px" alt="use imagination in lieu of image">
              <div class="card-body" >
-            <h5 id = "demo" class="card-title">${upper}</h5>
+            <a target="_blank" href="${link}"><h6 class="card-title">${source}</h6></a>   
             <p id = "desc${i}" data-id ="${i}" class=card-text truncate">${myDesc}</p>
-            <a target="_blank" href="${link}" class="btn btn-primary">Visit</a> 
+            <a target="_blank" href="${link}" class="btn btn-primary">Full Article</a> 
         </div>
       </div>
     </div>`;
