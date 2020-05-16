@@ -22,14 +22,14 @@ $(document).ready(function () {
         .then((res) => res.json())
         .then((data) => {
           console.log(data);
-          resultHeading.innerHTML = `<br><h1 style="color: green;">Search results for '${term}':</h1>`;
+          resultHeading.innerHTML = `<br><h1 style="color: black;">Search results for '${term}':</h1>`;
           if (data.meals === null) {
             resultHeading.innerHTML = `<p>There are no search results. Try again!<p>`;
           } else {
             mealsEl.innerHTML = data.meals
               .map(
                 (meal) =>
-                  `<div class="meal">
+                `<div class="meal">
               <img src="${meal.strMealThumb}" alt="${meal.strMeal}" />
               <div class="meal-info" data-mealID="${meal.idMeal}">
               </div>
@@ -121,3 +121,4 @@ $(document).ready(function () {
     }
   });
 });
+
