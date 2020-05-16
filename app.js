@@ -7,16 +7,16 @@ $(document).ready(function () {
 
   var x = document.getElementById("demo");
 
-  getLocation();
+  // getLocation();
 
-  var x = $("#demo");
-  function getLocation() {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(showPosition);
-    } else {
-      x.html("Geolocation is not supported by this browser.");
-    }
-  }
+  // var x = $("#demo");
+  // function getLocation() {
+  //   if (navigator.geolocation) {
+  //     navigator.geolocation.getCurrentPosition(showPosition);
+  //   } else {
+  //     x.html("Geolocation is not supported by this browser.");
+  //   }
+  // }
 
   function showPosition(position) {
     var lon = position.coords.longitude;
