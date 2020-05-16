@@ -21,8 +21,8 @@ $(document).ready(function () {
   $("#date").text(moment().format("LL"));
   $("#time").text(moment().format("LT"));
 
+  // weather API
   var api_key_kenny = "6dbe43cb883ce8ea55cc9545b5f2cea3";
-
   var x = document.getElementById("demo");
 
   getLocation();

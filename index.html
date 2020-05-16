@@ -8,45 +8,35 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-
-    <title>Project 1</title>
+    <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+        <title>Project 1</title>
   </head>
 
   <body>
-    <!-- jumbotron header with date and time -->
-    <header class="jumbotron text-center rounded-0">
+
+    <header class="jumbotron text-center rounded-0 jumbotronIndex">
       <h1 id="indexHeader"></h1>
-      <!-- <h1 id="date"></h1>
-    <h1 id="time"></h1> -->
     </header>
 
     <!-- nav bar -->
-    <nav>
-      <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link active" href="./index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./recipes.html">Recipes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./movies.html">Movies</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./news.html">News</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./covid.html">COVID-19 Updates</a>
-        </li>
-      </ul>
-    </nav>
+  <nav>
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="./index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./recipes.html">Recipes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./movies.html">Movies</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./news.html">News</a>
+      </li>
+    </ul>
+  </nav>
 
     <div class="card text-center">
       <h1 id="date"></h1>
@@ -65,13 +55,32 @@
       />
     </div>
 
-    <!-- linking scripts here -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.5.0.min.js"
-      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
-      crossorigin="anonymous"
-    ></script>
-    <script src="app.js"></script>
-  </body>
+  <!-- COVID-19 Update Container -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-3 border-primary">
+          <h5 class="card-header">COVID-19 Stats (Global)</h5>
+          <div class="card-body">
+            <div class="card-text" id="covidGlobal"></div>
+          </div>
+        </div>
+        <div class="card mb-3 border-primary">
+          <h5 class="card-header">COVID-19 Stats (USA)</h5>
+          <div class="card-body">
+            <div class="card-text" id="covidUSA"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- linking scripts here -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+  <script src="covid.js"></script>
+</body>
+
 </html>
