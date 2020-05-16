@@ -59,21 +59,6 @@ body {
 .card {
   margin-top: 20px;
 }
-<<<<<<< HEAD
-.stars {
-    background-image: url("https://cdn.pixabay.com/photo/2016/03/09/09/37/stars-1245902_960_720.jpg");
-}
-
-.sunny {
-    background-image: url("https://cdn.pixabay.com/photo/2016/01/02/01/54/clouds-1117607_960_720.jpg");
-}
-.newsContainer {
-    margin-left: 40px;
-    margin-right: 40px;
-}
-=======
-
->>>>>>> becf892a924e5779be74c20b9ae66ecaa83d6d79
 .container {
   margin: auto;
   max-width: 800px;
@@ -84,16 +69,8 @@ body {
   text-align: center;
 }
 
-<<<<<<< HEAD
-.truncate {
-  /* white-space: wrap; */
-  overflow: hidden;
-  /* max-width: 30ch; */
-  text-overflow: ellipsis;
-=======
 .flex {
   display: flex;
->>>>>>> becf892a924e5779be74c20b9ae66ecaa83d6d79
 }
 
 input,
