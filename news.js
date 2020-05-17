@@ -11,7 +11,7 @@ $(document).ready(function () {
   // });
   $.ajax({
     type: "GET",
-    url: `http://newsapi.org/v2/top-headlines?country=us&apiKey=5f7ab4098d1e4689ac5bb49a9b806b47`,
+    url: `https://newsapi.org/v2/top-headlines?country=us&apiKey=5f7ab4098d1e4689ac5bb49a9b806b47`,
     dataType: "json",
   }).then(function (res) {
     console.log(res);

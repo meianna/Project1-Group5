@@ -1,53 +1,33 @@
 # Project 1
 
-## Application Requirements
+## Personal Dashboard
 
-- Must use at least two server-side APIs
+- Our app uses several APIs to create a personal hub of information and entertainment
 
-- Must use a CSS framework _other than_ Bootstrap
+- Contains five different APIs for: weather, COVID-19 data, news articles, recipes, and movies
 
-- Must be interactive (i.e: accept and respond to user input)
+- Responsive web design on every html page
 
-- Use at least one new third-party API
+## Motivation
 
-- Must have a polished UI
+- Our group wanted to create something relevant that anyone could use to make their lives a little easier
 
-- Must meet good quality coding standards
+- With the coronavirus pandemic being extremely relevant to everyone right now, we decided to build an app that would provide information and entertainment specifically during the pandemic
 
-- Does not use alerts, confirms or prompts (look into _modals_)
+- We wanted a simple and intuitive user interface with a nav bar linking to the main features
 
-- Must be deployed to GitHub Pages
+## Homepage
 
-## Presentation Requirements
+- The first time the user opens to the homepage, they are prompted for their name which shows in the jumbotron header
 
-Use this [project presentation template](https://docs.google.com/presentation/d/1_u8TKy5zW5UlrVQVnyDEZ0unGI2tjQPDEpA0FNuBKAw/edit?usp=sharing) to address the following:
+- The user is prompted to share their location. Once accepted, weather information from their current location is shown in a card
 
-- Elevator pitch: a one minute description of your application
+- Global and USA-specific COVID-19 statistics are displayed in cards below. Statistics include new and total cases as well as new and total recoveries.
 
-- Concept: What is your user story? What was your motivation for development?
+## News
 
-- Process: What were the technologies used? How were tasks and roles broken down and assigned? What challenges did you encounter? What were your successes?
+- Displays four columns of top US news articles. A preview of the article is displayed, and a button is provided that opens the full article in a new tab.
 
-- Demo: Show your stuff!
+## Recipes
 
-- Directions for Future Development
-
-- Links to the deployed application and the GitHub repository
-
-## Grading Metrics
-
-| Metric        | Weight |
-| ------------- | ------ |
-| Concept       | 10%    |
-| Design        | 20%    |
-| Functionality | 30%    |
-| Collaboration | 30%    |
-| Presentation  | 10%    |
-
-## Submission on BCS
-
-You are required to submit the following:
-
-- The URL of the deployed application
-
-- The URL of the GitHub repository
+## Movies
